@@ -7,12 +7,6 @@ public class AddressBook {
     public AddressBook() {
         myBuddies = new ArrayList<>();
     }
-
-    BuddyInfo Homer =new BuddyInfo("Homer");
-    BuddyInfo Ali =new BuddyInfo("Ali");
-    BuddyInfo Babak =new BuddyInfo("Babak");
-    BuddyInfo Mahsa =new BuddyInfo("Mahsa");
-
     public void addBuddy(BuddyInfo aBuddy){
         if(aBuddy != null){myBuddies.add(aBuddy);}
     }
@@ -24,11 +18,10 @@ public class AddressBook {
         return null;
     }
     public static void main(String[] args) {
-        BuddyInfo buddy = new BuddyInfo("Jhon");
-        BuddyInfo buddy1 = new BuddyInfo("Ali");
+        BuddyInfo buddy = new BuddyInfo("Jhon", "123");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
-        addressBook.addBuddy(buddy1);
+
         addressBook.removeBuddy(0);
     }
 }
